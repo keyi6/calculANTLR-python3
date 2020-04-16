@@ -10,3 +10,4 @@ expr:	left=expr op=('*'|'/') right=expr  # OpExpr
 
 // tokens expressed as regular expressions
 INT : [0-9]+ ;
+WS  :   [ \t]+ -> skip ;
